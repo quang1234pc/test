@@ -3638,61 +3638,6 @@ end
 end)
 end
 end)
-page1:Line()
-        page1:Label("┇ FAKE THING ┇")
-        page1:Line()
-        page1:Button("Fake Unlocked All Storage/Bound Slot", function()
-local plrid = tostring(game.Players.LocalPlayer.UserId)
-local plr = tostring(game.Players.LocalPlayer)
-game.Workspace.UserData["User_"..plrid].Data.StoredDF1Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF2Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF3Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF4Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF5Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF6Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF7Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF8Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF9Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF10Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF11Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.StoredDF12Unlocked.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock1.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock2.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock3.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock4.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock5.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock6.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock7.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock8.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock9.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock10.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock11.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock12.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock13.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock14.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock15.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock16.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock17.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock18.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock19.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock20.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock21.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock22.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock23.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock24.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock25.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock26.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock27.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock28.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock29.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock30.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock31.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock32.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock33.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock34.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock35.Value = true
-game.Workspace.UserData["User_"..plrid].Data.BoundUnlock36.Value = true
-end)
 
         
         
