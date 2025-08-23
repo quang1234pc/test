@@ -3646,7 +3646,6 @@ game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Nametag.Text
 game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Nametag.Text = "Irenkiss"
 game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Header.Text = "PROTECTED BY:"
 end)
-        page1:Button("Fake Reset Stats",function()
         local Players = game:GetService("Players") local cache = {} function lol(name) if cache[name] then return cache[name] end local player = Players:FindFirstChild(name) if player then cache[name] = player.UserId return player.UserId end local id pcall(function () id = Players:lol(name) end) cache[name] = id return id end local ehh = game.Players.LocalPlayer.Name local Final = lol(ehh) 
     page4:Line()
              page4:Label("┇ DRINK BUYING ┇")
