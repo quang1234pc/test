@@ -109,7 +109,7 @@ _G.kick = true
         if game.CoreGui:FindFirstChild("LagoGui") then
             game.CoreGui:FindFirstChild("LagoGui"):Destroy()
         end
-        local Flux = {RainbowColorValue = 0, HueSelectionPosition = 0}
+        local Delta = {RainbowColorValue = 0, HueSelectionPosition = 0}
         local PresetColor = Color3.fromRGB(66, 134, 255)
         local UserInputService = game:GetService("UserInputService")
         local TweenService = game:GetService("TweenService")
@@ -126,15 +126,15 @@ _G.kick = true
         coroutine.wrap(
             function()
                 while wait() do
-                    Flux.RainbowColorValue = Flux.RainbowColorValue + 1 / 255
-                    Flux.HueSelectionPosition = Flux.HueSelectionPosition + 1
+                    Delta.RainbowColorValue = Flux.RainbowColorValue + 1 / 255
+                    Delta.HueSelectionPosition = Flux.HueSelectionPosition + 1
         
-                    if Flux.RainbowColorValue >= 1 then
+                    if Delta.RainbowColorValue >= 1 then
                         Flux.RainbowColorValue = 0
                     end
         
-                    if Flux.HueSelectionPosition == 80 then
-                        Flux.HueSelectionPosition = 0
+                    if Delta.HueSelectionPosition == 80 then
+                        Delta.HueSelectionPosition = 0
                     end
                 end
             end
