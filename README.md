@@ -130,7 +130,7 @@ _G.kick = true
                     Delta.HueSelectionPosition = Flux.HueSelectionPosition + 1
         
                     if Delta.RainbowColorValue >= 1 then
-                        Flux.RainbowColorValue = 0
+                        Delta.RainbowColorValue = 0
                     end
         
                     if Delta.HueSelectionPosition == 80 then
@@ -199,7 +199,7 @@ _G.kick = true
         
         
         
-        function Flux:Window(text, bottom,mainclr,toclose)
+        function Delta:Window(text, bottom,mainclr,toclose)
             CloseBind = toclose or Enum.KeyCode.RightControl
             PresetColor = mainclr or Color3.fromRGB(0, 254, 252)
             local fs = false
@@ -319,7 +319,7 @@ _G.kick = true
                 end
             )
         
-            function Flux:Notification(desc,buttontitle)
+            function Delta:Notification(desc,buttontitle)
                 for i, v in next, MainFrame:GetChildren() do
                     if v.Name == "NotificationBase" then
                         v:Destroy()
