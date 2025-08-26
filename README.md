@@ -1920,11 +1920,11 @@ _G.kick = true
                                 OldHueSelectionPosition = HueSelection.Position
         
                                 while RainbowColorPicker do
-                                    BoxColor.BackgroundColor3 = Color3.fromHSV(Flux.RainbowColorValue, 1, 1)
-                                    Color.BackgroundColor3 = Color3.fromHSV(Flux.RainbowColorValue, 1, 1)
+                                    BoxColor.BackgroundColor3 = Color3.fromHSV(Delta.RainbowColorValue, 1, 1)
+                                    Color.BackgroundColor3 = Color3.fromHSV(Delta.RainbowColorValue, 1, 1)
         
                                     ColorSelection.Position = UDim2.new(1, 0, 0, 0)
-                                    HueSelection.Position = UDim2.new(0.48, 0, 0, Flux.HueSelectionPosition)
+                                    HueSelection.Position = UDim2.new(0.48, 0, 0, Delta.HueSelectionPosition)
         
                                     pcall(callback, BoxColor.BackgroundColor3)
                                     wait()
