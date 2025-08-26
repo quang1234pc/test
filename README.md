@@ -104,7 +104,7 @@ _G.kick = true
         if game.CoreGui:FindFirstChild("LagoGui") then
             game.CoreGui:FindFirstChild("LagoGui"):Destroy()
         end
-        local Flux = {RainbowColorValue = 0, HueSelectionPosition = 0}
+        local Delta = {RainbowColorValue = 0, HueSelectionPosition = 0}
         local PresetColor = Color3.fromRGB(66, 134, 255)
         local UserInputService = game:GetService("UserInputService")
         local TweenService = game:GetService("TweenService")
@@ -121,15 +121,15 @@ _G.kick = true
         coroutine.wrap(
             function()
                 while wait() do
-                    Flux.RainbowColorValue = Flux.RainbowColorValue + 1 / 255
-                    Flux.HueSelectionPosition = Flux.HueSelectionPosition + 1
+                    Delta.RainbowColorValue = Delta.RainbowColorValue + 1 / 255
+                    Delta.HueSelectionPosition = Delta.HueSelectionPosition + 1
         
-                    if Flux.RainbowColorValue >= 1 then
-                        Flux.RainbowColorValue = 0
+                    if Delta.RainbowColorValue >= 1 then
+                        Delta.RainbowColorValue = 0
                     end
         
-                    if Flux.HueSelectionPosition == 80 then
-                        Flux.HueSelectionPosition = 0
+                    if Delta.HueSelectionPosition == 80 then
+                        Delta.HueSelectionPosition = 0
                     end
                 end
             end
@@ -194,7 +194,7 @@ _G.kick = true
         
         
         
-        function Flux:Window(text, bottom,mainclr,toclose)
+        function Delta:Window(text, bottom,mainclr,toclose)
             CloseBind = toclose or Enum.KeyCode.RightControl
             PresetColor = mainclr or Color3.fromRGB(0, 254, 252)
             local fs = false
@@ -314,7 +314,7 @@ _G.kick = true
                 end
             )
         
-            function Flux:Notification(desc,buttontitle)
+            function Delta:Notification(desc,buttontitle)
                 for i, v in next, MainFrame:GetChildren() do
                     if v.Name == "NotificationBase" then
                         v:Destroy()
@@ -6777,7 +6777,7 @@ local vppt = x.VTCebvc
     for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
         if v.Name == Choose2 then
             game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(vppt,"QuakePower4", "StopCharging",workspace.IslandCaver.Stones.Stone,v.HumanoidRootPart.CFrame,100,Vector3.new(-290.4129333496094, 266.8401794433594, -103.8988037109375))
-        wait(0.15)
+        wait(0.005)
         end
     end
     end
