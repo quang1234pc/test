@@ -126,8 +126,8 @@ _G.kick = true
         coroutine.wrap(
             function()
                 while wait() do
-                    Delta.RainbowColorValue = Flux.RainbowColorValue + 1 / 255
-                    Delta.HueSelectionPosition = Flux.HueSelectionPosition + 1
+                    Delta.RainbowColorValue = Delta.RainbowColorValue + 1 / 255
+                    Delta.HueSelectionPosition = Delta.HueSelectionPosition + 1
         
                     if Delta.RainbowColorValue >= 1 then
                         Delta.RainbowColorValue = 0
@@ -1925,11 +1925,11 @@ _G.kick = true
                                 OldHueSelectionPosition = HueSelection.Position
         
                                 while RainbowColorPicker do
-                                    BoxColor.BackgroundColor3 = Color3.fromHSV(Flux.RainbowColorValue, 1, 1)
-                                    Color.BackgroundColor3 = Color3.fromHSV(Flux.RainbowColorValue, 1, 1)
+                                    BoxColor.BackgroundColor3 = Color3.fromHSV(Delta.RainbowColorValue, 1, 1)
+                                    Color.BackgroundColor3 = Color3.fromHSV(Delta.RainbowColorValue, 1, 1)
         
                                     ColorSelection.Position = UDim2.new(1, 0, 0, 0)
-                                    HueSelection.Position = UDim2.new(0.48, 0, 0, Flux.HueSelectionPosition)
+                                    HueSelection.Position = UDim2.new(0.48, 0, 0, Delta.HueSelectionPosition)
         
                                     pcall(callback, BoxColor.BackgroundColor3)
                                     wait()
@@ -2468,8 +2468,8 @@ game.StarterGui:SetCore("SendNotification", {
           })
           wait()
  
-                local win = Flux:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
-                Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
+                local win = Delta:Window("Ayaka Hub)", "MADE BY QUANGDZ", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                Delta:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
         local page9 = win:Tab("KILL/DEF FARM", "http://www.roblox.com/asset/?id=9391995844")
