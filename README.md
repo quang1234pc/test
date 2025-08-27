@@ -110,7 +110,7 @@ _G.kick = true
         if game.CoreGui:FindFirstChild("LagoGui") then
             game.CoreGui:FindFirstChild("LagoGui"):Destroy()
         end
-        local Flux = {RainbowColorValue = 0, HueSelectionPosition = 0}
+        local Delta = {RainbowColorValue = 0, HueSelectionPosition = 0}
         local PresetColor = Color3.fromRGB(66, 134, 255)
         local UserInputService = game:GetService("UserInputService")
         local TweenService = game:GetService("TweenService")
@@ -127,15 +127,15 @@ _G.kick = true
         coroutine.wrap(
             function()
                 while wait() do
-                    Flux.RainbowColorValue = Flux.RainbowColorValue + 1 / 255
-                    Flux.HueSelectionPosition = Flux.HueSelectionPosition + 1
+                    Delta.RainbowColorValue = Delta.RainbowColorValue + 1 / 255
+                    Delta.HueSelectionPosition = Delta.HueSelectionPosition + 1
         
-                    if Flux.RainbowColorValue >= 1 then
-                        Flux.RainbowColorValue = 0
+                    if Delta.RainbowColorValue >= 1 then
+                        Delta.RainbowColorValue = 0
                     end
         
-                    if Flux.HueSelectionPosition == 80 then
-                        Flux.HueSelectionPosition = 0
+                    if Delta.HueSelectionPosition == 80 then
+                        Delta.HueSelectionPosition = 0
                     end
                 end
             end
@@ -200,7 +200,7 @@ _G.kick = true
         
         
         
-        function Flux:Window(text, bottom,mainclr,toclose)
+        function Delta:Window(text, bottom,mainclr,toclose)
             CloseBind = toclose or Enum.KeyCode.RightControl
             PresetColor = mainclr or Color3.fromRGB(0, 254, 252)
             local fs = false
@@ -320,7 +320,7 @@ _G.kick = true
                 end
             )
         
-            function Flux:Notification(desc,buttontitle)
+            function Delta:Notification(desc,buttontitle)
                 for i, v in next, MainFrame:GetChildren() do
                     if v.Name == "NotificationBase" then
                         v:Destroy()
@@ -1926,11 +1926,11 @@ _G.kick = true
                                 OldHueSelectionPosition = HueSelection.Position
         
                                 while RainbowColorPicker do
-                                    BoxColor.BackgroundColor3 = Color3.fromHSV(Flux.RainbowColorValue, 1, 1)
-                                    Color.BackgroundColor3 = Color3.fromHSV(Flux.RainbowColorValue, 1, 1)
+                                    BoxColor.BackgroundColor3 = Color3.fromHSV(Delta.RainbowColorValue, 1, 1)
+                                    Color.BackgroundColor3 = Color3.fromHSV(Delta.RainbowColorValue, 1, 1)
         
                                     ColorSelection.Position = UDim2.new(1, 0, 0, 0)
-                                    HueSelection.Position = UDim2.new(0.48, 0, 0, Flux.HueSelectionPosition)
+                                    HueSelection.Position = UDim2.new(0.48, 0, 0, Delta.HueSelectionPosition)
         
                                     pcall(callback, BoxColor.BackgroundColor3)
                                     wait()
@@ -2469,8 +2469,8 @@ game.StarterGui:SetCore("SendNotification", {
           })
           wait()
  
-                local win = Flux:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
-                Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
+                local win = Delta:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                Delta:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
         local page9 = win:Tab("KILL/DEF FARM", "http://www.roblox.com/asset/?id=9391995844")
